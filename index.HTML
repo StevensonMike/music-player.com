@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Music Player</title>
+<style>
+/* Add some basic styling to the page */
+body {
+font-family: Arial, sans-serif;
+margin: 0;
+padding: 20px;
+text-align: center;
+}
+
+h1 {
+margin-bottom: 20px;
+}
+
+#search-form {
+margin-bottom: 20px;
+}
+
+#player {
+width: 500px;
+margin: 0 auto;
+}
+</style>
+</head>
+<body>
+<h1>Music Player</h1>
+
+<form id="search-form">
+<input type="text" id="search-input" placeholder="Search for a song" />
+<button type="submit">Search</button>
+</form>
+
+<div id="player">
+<audio id="audio-player" controls></audio>
+</div>
+
+<script>
+const searchForm = document.getElementById('search-form');
+const searchInput = document.getElementById('search-input');
+const audioPlayer = document.getElementById('audio-player');
+
+searchForm.addEventListener('submit', function (e) {
+e.preventDefault(); // Prevent form submission
+
+const query = searchInput.value.trim();
+
+// Check if the query is a valid URL
+if (isUrl(query)) {
+audioPlayer.src = query;
+} else {
+searchSong(query);
+}
+
+searchInput.value = ''; // Clear input
+});
+
+// Function to search for a song based on query
+function searchSong(query) {
+// Implement your logic to search for the song here
+
+// For example, you can use an external API like YouTube Data API to search for the song
+
+// Once you have the song URL, set it as the source of the audio player
+const songUrl = 'URL_OF_THE_SONG';
+audioPlayer.src = songUrl;
+}
+
+// Function to check if a string is a valid URL
+function isUrl(str) {
+try {
+new URL(str);
+return true;
+} catch (e) {
+return false;
+}
+}
+</script>
+</body>
+</html>
+1. "Problem"
+2. "Break Free"
+3. "Bang Bang" (with Jessie J and Nicki Minaj)
+4. "Love Me Harder" (with The Weeknd)
+5. "One Last Time"
+6. "Focus"
+7. "Dangerous Woman"
+8. "Side to Side" (featuring Nicki Minaj)
+9. "Everyday" (featuring Future)
+10. "No Tears Left to Cry"
+11. "God Is a Woman"
+12. "Breathin"
+13. "Thank U, Next"
+14. "7 Rings"
+15. "Break Up with Your Girlfriend, I'm Bored"
+16. "Don't Call Me Angel" (with Miley Cyrus and Lana Del Rey)
+17. "Boyfriend" (with Social House)
+18. "Stuck with U" (with Justin Bieber)
+19. "Rain on Me" (with Lady Gaga)
+20. "Positions"
+21. "34+35"
+22. "Motive" (featuring Doja Cat)
+23. "POV"
+24. "A Moment Like This" (from "American Idol")
+25. "Put Your Hearts Up" (her debut single)
+26. "The Way" (featuring Mac Miller)
+27. "Right There" (featuring Big Sean)
+28. "Baby I"
+29. "Popular Song" (with Mika)
+30. "Almost Is Never Enough" (featuring Nathan Sykes)
+31. "Santa Tell Me"
+32. "Let Me Love You" (featuring Lil Wayne)
+33. "Beauty and the Beast" (with John Legend)
+34. "Heatstroke" (with Calvin Harris, Young Thug, and Pharrell Williams)
+35. "Get Well Soon"
+36. "Dance to This" (with Troye Sivan)
+37. "Bed" (with Nicki Minaj)
+38. "The Light is Coming" (featuring Nicki Minaj)
+39. "Raindrops (An Angel Cried)"
+40. "Successful"
+41. "Imagine"
+42. "Needy"
+43. "NASA"
+44. "Bloodline"
+45. "Fake Smile"
+46. "Bad Idea"
+47. "Make Up"
+48. "Ghostin"
+49. "In My Head"
+50. "7 rings" (Remix) (featuring 2 Chainz)
+51. "How I Look on You"
+52. "Nobody" (featuring Chaka Khan)
+53. "R.E.M"
+54. "Imagine" (Remix) (featuring Minaj)
+55. "Got Her Own" (featuring Victoria Monet)
+56. "My Favorite Things"
+57. "Over and Over Again" (with Nathan Sykes)
+58. "Tattooed Heart"
+59. "Only 1"
+60. "Why Try"
+61. "Hands On Me" (featuring A$AP Ferg)
+62. "Intro"
+63. "Let Me Try" (from "Victorious")
+64. "You're My Only Shawty" (with Iyaz)
+65. "Right There" (featuring Big Sean) [7th Heaven Remix]
+66. "Best Mistake" (featuring Big Sean)
+67. "Intro" (Christmas & Chill)
+68. "Wit It This Christmas"
+69. "December"
+70. "True Love"
+71. "Winter Things"
+72. "Into You"
+73. "Sometimes"
+74. "Dangerous Woman" (A Cappella)
+75. "Contagious Love" (with Bella Thorne
